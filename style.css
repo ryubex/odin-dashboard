@@ -1,0 +1,49 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  /*grid-template-rows: 1fr 4fr 1fr;*/
+  gap: 15px;
+  grid-template-areas: 
+    'sidebar nav nav'
+    'sidebar stat task'
+    'sidebar table progress';
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+}
+
+.sidebar { 
+    grid-area: sidebar; 
+}
+.nav { 
+    grid-area: nav; 
+}
+.stat { 
+    grid-area: stat; 
+}
+.task { 
+    grid-area: task; 
+}
+.table { 
+    grid-area: table; 
+}
+.progress { 
+    grid-area: progress; 
+}
+
