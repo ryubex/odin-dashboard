@@ -4,14 +4,39 @@ html {
   margin: 0;
 }
 
+.h5 {
+    color: black;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items:start;
+    height: 60px;
+    gap: 8px;
+}
+
+.logo h5 {
+    align-self: center;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+  height: 60px; /* or any size you want */
+  width: auto;
+}
+
+
 .container {
   text-align: center;
   height: 100%;
-  padding: 16px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  /*grid-template-rows: 1fr 4fr 1fr;*/
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
   gap: 15px;
   grid-template-areas: 
     'sidebar nav nav'
